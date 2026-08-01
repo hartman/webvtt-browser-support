@@ -82,6 +82,36 @@ The iOS Safari column reflects Simulator testing (see the [intro page](index.md)
 
 Every selector type and property above was also checked via those two secondary methods, and matched the default `STYLE`-block result exactly, except the one `background-image` row.
 
+## Animated `background-image` formats
+
+Whether an animated background shows up — and whether it actually animates — depends as much on *how the image is referenced* as on its format.
+
+Network-referenced image (a URL, not a data URI), via page-level `<style>` — the only method that reaches Firefox/Safari/Safari TP at all, since none of them fetch network images from inside a `STYLE` block (same restriction as the `background-image` row above):
+
+| Format | Chrome 151 | Firefox 153 | Safari 26.6 | Safari TP 27.0 |
+|---|---|---|---|---|
+| Animated GIF | ✅ animates | ✅ animates ‖ | ✅ animates | ✅ animates |
+| Animated PNG (APNG) | ✅ animates | ✅ animates ‖ | ✅ animates | ✅ animates |
+| Animated WebP | ✅ animates | ✅ animates ‖ | ✅ animates | ✅ animates |
+| SVG animated via SMIL (`<animate>`) | ❌ frozen | ❌ frozen ‖ | ❌ frozen | ❌ frozen |
+| SVG animated via CSS `@keyframes` | ❌ frozen | ❌ frozen ‖ | ❌ frozen | ❌ frozen |
+
+Base64 data URI, in the `.vtt` file's own `STYLE` block (i.e. the one way any of this could reach a real, self-contained subtitle file's default styling method):
+
+| Format | Chrome 151 | Firefox 153 | Safari 26.6 | Safari TP 27.0 |
+|---|---|---|---|---|
+| Animated GIF | ✅ animates | ❌ ♦ | ❌ ♦ | ❌ ♦ |
+| Animated PNG (APNG) | ✅ animates | ❌ ♦ | ❌ ♦ | ❌ ♦ |
+| Animated WebP | ✅ animates | ❌ ♦ | ❌ ♦ | ❌ ♦ |
+| SVG animated via SMIL (`<animate>`) | ✅ animates | ❌ ♦ | ❌ ♦ | ❌ ♦ |
+| SVG animated via CSS `@keyframes` | ✅ animates | ❌ ♦ | ❌ ♦ | ❌ ♦ |
+
+The SVG rows are the interesting reversal: a **network-loaded** SVG's own animation never plays anywhere (treated as a fully static image, like `<img src="*.svg">`), but the identical SVG **base64-encoded** animates normally — in all four browsers, once it's actually reachable. Encoding, not format, is what determines whether an SVG's own animation runs.
+
+‖ Firefox can't reach any of these through `::cue(.class)` at all (same argument-selector failure as the selector-types table above) — verified separately with a bare, class-free `::cue{}` rule instead, where the underlying animation behavior turns out identical to the other three browsers.
+
+♦ No `background-image` shows at all inside a `STYLE` block in these three browsers, base64 or not, any format — confirmed by screenshot. Chrome is the only browser where the default/primary styling method can show an animated background at all; everyone else needs page-level or external CSS. Not independently re-tested on iOS Safari for either table on this page.
+
 ## VTT cue settings
 
 | Feature | Chrome 151 | Firefox 153 | Safari 26.6 | Safari TP 27.0 | iOS Safari 26.5 |
