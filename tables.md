@@ -1,5 +1,5 @@
 ---
-title: Tables
+title: Support Matrix
 ---
 
 [Intro](index.md) · [Source on GitHub](https://github.com/hartman/webvtt-browser-support)

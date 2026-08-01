@@ -2,7 +2,7 @@
 title: Home
 ---
 
-[Tables](tables.md) · [Source on GitHub](https://github.com/hartman/webvtt-browser-support)
+[Support Matrix](tables.md) · [Source on GitHub](https://github.com/hartman/webvtt-browser-support)
 
 # The state of Native WebVTT, as tested against real browsers
 
@@ -17,7 +17,7 @@ title: Home
 - **Karaoke-style highlighting** (`:past`/`:future`) works consistently where implemented, but is poorly documented in the spec and a common pitfall for authors.
 - video.js's own renderer isn't spec-compliant either, and turning it off costs little, so you probably should.
 
-Skip straight to the [full findings](#the-big-picture-browser-by-browser) below, or the [tables page](tables.md) for the complete matrix.
+Skip straight to the [full findings](#the-big-picture-browser-by-browser) below, or the [support matrix](tables.md) for the complete breakdown.
 
 ## Background
 I've long been interested in WebVTT. Or maybe I should say the _promise_ of WebVTT, because so far usage is lower than expected and browser behavior is rather unpredictable.
@@ -44,7 +44,7 @@ All this was then compiled into this report.
 - **Safari and Safari Technology Preview** are, overall, the most complete and consistent of the four. Dare I say... nearly feature complete?
 - **iOS Safari** (Simulator) matched desktop Safari on everything tested.
 
-Read on for some more highlighted findings or skip straight to the [tables page](tables.md) for the complete matrix.
+Read on for some more highlighted findings or skip straight to the [support matrix](tables.md) for the complete breakdown.
 
 ## Karaoke styling with `:past`/`:future` only works if you wrap your text
 
@@ -141,6 +141,6 @@ This is the question that started this whole project (see the Background section
 
 Short answer: **probably, yes.** Native rendering is closer to specification. video.js 8.23.9 itself implements zero VTT CSS styling, so switching gains `::cue()` styling on Chrome/Safari/Safari TP and regions on Firefox/Safari, at the cost of reinheriting Chrome's bugs in a few rarely used cue-settings (narrow-`size` wrapping, `positionAlign`/`lineAlign`, vertical writing mode) that video.js currently sidesteps.
 
-The [tables page](tables.md) has the full video.js comparison table, plus the complete native-browser feature matrix: every property, every selector form, every cue-settings combination tested.
+The [support matrix](tables.md) has the full video.js comparison table, plus the complete native-browser feature matrix: every property, every selector form, every cue-settings combination tested.
 
 The raw fixtures, screenshots, and JSON pixel-sample data behind every claim here are in the [GitHub repo](https://github.com/hartman/webvtt-browser-support), if you want to check my work or re-run it yourself.
