@@ -1,8 +1,10 @@
 # WebVTT Browser Support Test Suite
 
+**[Read the published report](https://hartman.github.io/webvtt-browser-support/)**
+
 Validates native WebVTT rendering/styling support across the browsers installed on this machine (Chrome, Firefox, Safari, Safari Technology Preview, iOS Safari via Simulator) using WebDriver and Appium.
 
-See **REPORT.md** for findings. See `fixtures/` for the test pages and `results/` for the raw screenshots/JSON backing every claim.
+See **REPORT.md** for findings (the working file the published report is summarized from). See `fixtures/` for the test pages and `results/` for the raw screenshots/JSON backing every claim.
 
 ## Setup
 
