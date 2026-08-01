@@ -6,7 +6,13 @@ title: Tables
 
 # Feature support matrix
 
-Legend: ✅ works as expected · ❌ does not work / not applied. Every cell, including every iOS Safari cell, was independently confirmed per browser: screenshotted for rendering fixtures, DOM-dumped (`TextTrack.cues`/`getCueAsHTML()`) for timestamp parsing and API surface. Styling cells reflect the default styling method, an in-file `WEBVTT STYLE` block, since that's how a real, standalone `.vtt` file actually declares its own styling. The iOS Safari column reflects Simulator testing (see the [intro page](index.md)).
+Legend: ✅ works as expected · ❌ does not work / not applied.
+
+Every cell, including every iOS Safari cell, was independently confirmed per browser: screenshotted for rendering fixtures, DOM-dumped (`TextTrack.cues`/`getCueAsHTML()`) for timestamp parsing and API surface.
+
+Styling cells reflect the default styling method, an in-file `WEBVTT STYLE` block, since that's how a real, standalone `.vtt` file actually declares its own styling.
+
+The iOS Safari column reflects Simulator testing (see the [intro page](index.md)).
 
 ## API surface (`VTTCue`/`VTTRegion` feature detection)
 
@@ -49,6 +55,7 @@ Legend: ✅ works as expected · ❌ does not work / not applied. Every cell, in
 | Same, but one element wraps the *whole* cue instead of one per segment | ❌ no internal split (whole element renders one color) | ❌ | ❌ no internal split | ❌ no internal split | ❌ no internal split |
 
 \* Per spec, text nodes aren't selectable at all. See the intro page's karaoke section for the fix (wrap each segment in its own element).
+
 § Renders as a full-width bar across the cue line, not a tight box like a native `::cue()` match normally produces. Likely a different, newer code path, not the same feature simply re-enabled.
 
 ## CSS properties on `::cue()`
@@ -70,6 +77,7 @@ Legend: ✅ works as expected · ❌ does not work / not applied. Every cell, in
 | `text-combine-upright` (in `vertical:rl` text) | ✅ | ❌ | ✅ | ✅ | ✅ |
 
 ¶ Chrome supports this property generally outside WebVTT, since Chrome 84. It's specifically inert inside `::cue()`'s permitted-property set.
+
 † Fails via the default `STYLE`-block method. Works fine via the secondary page-level-`<style>`/external-stylesheet methods, tiling the checkerboard correctly, the only property where those methods diverge from the default.
 
 Every selector type and property above was also checked via those two secondary methods, and matched the default `STYLE`-block result exactly, except the one `background-image` row.
