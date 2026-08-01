@@ -14,6 +14,7 @@ title: Home
 - **Chrome** deviates in specific, deliberate ways: no regions at all.
 - **Firefox** deviates significantly: it doesn't really allow styling per cue at all.
 - **iOS Safari** tracks desktop Safari's spec compliance exactly, no divergence found.
+- **Karaoke-style highlighting** (`:past`/`:future`) only works if you wrap each word/segment in its own element; plain text between timestamps never animates, in any browser.
 - video.js's own renderer isn't spec-compliant either, and turning it off costs little, so you probably should.
 
 Skip straight to the [full findings](#the-big-picture-browser-by-browser) below, or the [tables page](tables.md) for the complete matrix.
