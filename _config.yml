@@ -1,0 +1,4 @@
+title: Native WebVTT Browser Support, Re-Tested
+description: What actually happens when you point real Chrome, Firefox, Safari, Safari TP, and iOS Safari at the WebVTT spec.
+theme: jekyll-theme-cayman
+markdown: kramdown
