@@ -116,7 +116,7 @@ Every selector type and property above was also checked via those two secondary 
 | Short cue timing `MM:SS.mmm` (no hours) | ✅ | ✅ | ✅ | ✅ | ✅ |
 | HTML character references (`&amp;` `&lt;` `&gt;` `&nbsp;` `&lrm;`) decode correctly in `getCueAsHTML()` | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-## video.js 
+## video.js
 
 video.js 8.23.9 implements **none** of the WebVTT CSS styling spec: no `::cue()`, no `::cue-region()`, no shadow DOM.
 It paints cues itself as plain HTML. A developer can reverse-engineer its internal DOM and write different, non-standard CSS that visually approximates a `::cue()` rule, but an in-file `STYLE` block (this report's default styling method for native browsers) parses fine and is then silently ignored, same as page-level CSS.

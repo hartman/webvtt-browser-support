@@ -9,26 +9,26 @@ title: Home
 *Tested in July/August 2026 against Chrome 151, Firefox 153, Safari 26.6, Safari Technology Preview 27.0, iOS Safari 26.5 (Simulator), and video.js 8.23.9.*
 
 ## Background
-I've long been interested in WebVTT. Or maybe I should say the _promise_ of WebVTT, because so far usage is lower than expected and browser behavior rather unpredictable.
+I've long been interested in WebVTT. Or maybe I should say the _promise_ of WebVTT, because so far usage is lower than expected and browser behavior is rather unpredictable.
 Ever since 2012 when Wikipedia got its first HTML5 player ([mwEmbed](https://www.mediawiki.org/wiki/Extension:MwEmbedSupport/MwEmbed), based on [Kaltura's player](https://kaltura.com)), I've been playing around with HTML5 subtitles for Wikipedia.
 Due to how in-flux the standards were back then, we settled on simple SubRip SRT subtitles (SubRip was the basis of WebVTT) with hopes to soon upgrade to WebVTT proper.
 
 When the standard moved on, we eventually added an SRT to WebVTT conversion pipeline, but Wikipedia never allowed contributors to author in WebVTT and thus the ability to use any of the advanced features never materialized.
-And the reason for this was multitude. First, with the more advanced features of WebVTT, validation of the user-contributed input became harder. We needed a PHP parser advanced enough to handle that.
+And the reasons for this were manifold. First, with the more advanced features of WebVTT, validation of the user-contributed input became harder. We needed a PHP parser advanced enough to handle that.
 But also... it seemed that a lot of the potential features of WebVTT didn't really materialize in browsers very well and definitely not consistently. This made investing into code to handle it risky.
 The WebVTT renderer of VideoJS helped us forward somewhat to bypass the browser differences, but I just never found the time to properly return to the topic.
 
 That's up till this year, where I finally found time to wrap up the important parts of my PHP parser for WebVTT called [vtt-vivid](https://github.com/hartman/vtt-vivid).
-And this made me curious... Where ARE we with browser native support for WebVTT ? Can I turn of the WebVTT renderer of video.js ?
+And this made me curious... Where ARE we with browser native support for WebVTT ? Can I turn off the WebVTT renderer of video.js ?
 It was hard to find good information on this topic. And now that we have AI, I figured it should be much easier to simply 'find out'.
 
 So with the assistance of Sonnet and Opus, I created a testing setup where the AI would write VTT testcases based on things it found in the specification.
-It then used WebDriver and Appium to test each of the browsers available to me on my Mac to make screenshots, analyze the screenshots and verify behavior at a scale that otherwise, I would not have had the perseverance for to see completely through.
+It then used WebDriver and Appium to test each of the browsers available to me on my Mac to make screenshots, analyze the screenshots and verify behavior at a scale that otherwise, I would not have had the perseverance to see completely through.
 All this was then compiled into this report.
 
 ## The big picture, browser by browser
 
-- **Chrome** styles cues well but has no Region support whatsoever.
+- **Chrome** styles cues well but has no region support whatsoever.
 - **Firefox** can position and size cues correctly, but it supports none of the selectors for `::cue()` making styling support rather useless.
 - **Safari and Safari Technology Preview** are, overall, the most complete and consistent of the four. Dare I say... nearly feature complete?
 - **iOS Safari** (Simulator) matched desktop Safari on everything tested.
@@ -37,7 +37,7 @@ Read on for some more highlighted findings or skip straight to the [tables page]
 
 ## Karaoke styling with `:past`/`:future` only works if you wrap your text
 
-According to some of the online documentation, like MDN's compat data, listed `:past`/`:future` as supported in Chrome since version 23 and Safari since version 7 to support karaoke style highlighting, when combine with cue timestamp-tags. However, the documentation on HOW to actually use this is severely lacking, and I had trouble finding any examples online.
+Some of the online documentation, like MDN's compat data, listed `:past`/`:future` as supported in Chrome since version 23 and Safari since version 7, for karaoke-style highlighting when combined with cue timestamp tags. However, the documentation on HOW to actually use this is severely lacking, and I had trouble finding any examples online.
 My first test put internal timestamps directly between plain words:
 
 ```vtt
@@ -82,7 +82,7 @@ It makes styling in Firefox practically useless. This is a known bug [Bugzilla #
 A cue with a `region` attribute doesn't error, it just silently falls back to ordinary, non-regioned cue layout, ignoring `width`, the anchor points, and `scroll:up`.
 This too is a known bug and [crbug.com/41267398](https://issues.chromium.org/issues/41267398) tracks this, along with the missing `positionAlign`/`lineAlign` properties.
 
-Firefox, Safari, and Safari TP all implement regions properly, and this missing support is responsible for Chrome actually scoring was lower than I was expecting.
+Firefox, Safari, and Safari TP all implement regions properly, and this missing support is responsible for Chrome actually scoring lower than I was expecting.
 
 ## Chrome doesn't wrap cue text inside a narrow `size` at all
 
@@ -98,7 +98,7 @@ Narrow size cue that should wrap onto more than one line because it is long text
 Firefox, Safari, and Safari TP all wrap correctly, respecting `align`. Yet Chrome just overflows past the `size:20%` box as a single line.
 I couldn't find an existing Chromium bug matching this exact problem.
 
-## Firefox doesn't support Vertical writing mode
+## Firefox doesn't support vertical writing mode
 
 ```vtt
 00:00:10.000 --> 00:00:12.000 vertical:rl line:84% position:50% align:center
