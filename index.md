@@ -15,7 +15,7 @@ title: Home
 - **Firefox** deviates significantly: it doesn't really allow styling per cue at all.
 - **iOS Safari** tracks desktop Safari's spec compliance exactly, no divergence found.
 - **Karaoke-style highlighting** (`:past`/`:future`) works consistently where implemented, but is poorly documented in the spec and a common pitfall for authors.
-- video.js's own renderer isn't spec-compliant either, and turning it off costs little, so you probably should.
+- video.js's own renderer isn't non-compliant so much as simply not feature-complete: it implements no `::cue()` styling or regions at all, and turning it off costs little, so you probably should.
 
 Skip straight to the [full findings](#the-big-picture-browser-by-browser) below, or the [support matrix](tables.md) for the complete breakdown.
 
@@ -27,10 +27,10 @@ Due to how in-flux the standards were back then, we settled on simple SubRip SRT
 When the standard moved on, we eventually added an SRT to WebVTT conversion pipeline, but Wikipedia never allowed contributors to author in WebVTT and thus the ability to use any of the advanced features never materialized.
 And the reasons for this were manifold. First, with the more advanced features of WebVTT, validation of the user-contributed input became harder. We needed a PHP parser advanced enough to handle that.
 But also... it seemed that a lot of the potential features of WebVTT didn't really materialize in browsers very well and definitely not consistently. This made investing into code to handle it risky.
-The WebVTT renderer of VideoJS helped us forward somewhat to bypass the browser differences, but I just never found the time to properly return to the topic.
+The WebVTT renderer of VideoJS helped us forward somewhat to bypass the browser differences, and Wikipedia has shipped with it enabled by default ever since, but I just never found the time to properly return to the topic.
 
 That's up till this year, where I finally found time to wrap up the important parts of my PHP parser for WebVTT called [vtt-vivid](https://github.com/hartman/vtt-vivid).
-And this made me curious... Where ARE we with browser native support for WebVTT ? Can I turn off the WebVTT renderer of video.js ?
+And this made me curious... Where ARE we with browser native support for WebVTT ? I started looking into turning off video.js's WebVTT renderer by default on Wikipedia in favor of native rendering, and wanted to know what that would actually gain or cost us.
 It was hard to find good information on this topic. And now that we have AI, I figured it should be much easier to simply 'find out'.
 
 So with the assistance of Sonnet and Opus, I created a testing setup where the AI would write VTT testcases based on things it found in the specification.
@@ -139,7 +139,7 @@ Per spec, a `NOTE` block should keep consuming lines until a blank line or end-o
 
 This is the question that started this whole project (see the Background section above).
 
-Short answer: **probably, yes.** Native rendering is closer to specification. video.js 8.23.9 itself implements zero VTT CSS styling, so switching gains `::cue()` styling on Chrome/Safari/Safari TP and regions on Firefox/Safari, at the cost of reinheriting Chrome's bugs in a few rarely used cue-settings (narrow-`size` wrapping, `positionAlign`/`lineAlign`, vertical writing mode) that video.js currently sidesteps.
+Short answer: **probably, yes.** Native rendering is closer to specification. video.js 8.23.9 itself implements zero VTT CSS styling, so switching gains `::cue()` styling on Chrome/Safari/Safari TP and regions on Firefox/Safari, at the cost of reinheriting Chrome's bugs in a few rarely used cue-settings (narrow-`size` wrapping, `positionAlign`/`lineAlign`, vertical writing mode) that video.js currently sidesteps. video.js exposes an `html5: { nativeTextTracks: true }` option to hand text tracks back to the browser's own renderer, which is what this whole comparison is really asking whether it's worth flipping.
 
 The [support matrix](tables.md) has the full video.js comparison table, plus the complete native-browser feature matrix: every property, every selector form, every cue-settings combination tested.
 
