@@ -35,6 +35,37 @@ The iOS Safari column reflects Simulator testing (see the [intro page](index.md)
 
 ‡ Chrome has no regions to fall back to, so it applies these settings directly to the cue instead of ignoring them like the other three browsers do.
 
+## Markup tags & timestamps
+
+| Feature | Chrome 151 | Firefox 153 | Safari 26.6 | Safari TP 27.0 | iOS Safari 26.5 |
+|---|---|---|---|---|---|
+| `<i>` italic markup → native style | ✅ | ✅ | ✅ | ✅ | ✅ |
+| `<b>` bold markup → native style | ✅ | ✅ | ✅ | ✅ | ✅ |
+| `<u>` underline markup → native style | ✅ | ✅ | ✅ | ✅ | ✅ |
+| `<b><i>` nested markup | ✅ | ✅ | ✅ | ✅ | ✅ |
+| `<ruby>`/`<rt>` layout (annotation above base) | ✅ | ✅ | ✅ | ✅ | ✅ |
+| `<c.class>` class span | ✅ | ✅ | ✅ | ✅ | ✅ |
+| `<lang>` tag renders content | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Internal timestamp tag parsing (`<00:00:01.000>` → `getCueAsHTML()` timestamp node) | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Short internal timestamp tag `<MM:SS.mmm>` (no hours) | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Overlapping/simultaneous cue stacking (2 or 3 cues) | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+## VTT cue settings
+
+| Feature | Chrome 151 | Firefox 153 | Safari 26.6 | Safari TP 27.0 | iOS Safari 26.5 |
+|---|---|---|---|---|---|
+| `line` / `position` / `align` / `size` (explicit %) | ✅ | ✅ | ✅ | ✅ | ✅ |
+| `line:N` (line-number snap-to-lines) | ✅ | ✅ | ✅ | ✅ | ✅ |
+| `line:-N` (negative line, count from bottom) | ✅ | ✅ | ✅ | ✅ | ✅ |
+| `position:P%,line-left`/`line-right` (`positionAlign`) | ❌ entire setting dropped, falls back to `auto` ¤ | ✅ | ✅ | ✅ | ✅ |
+| `line:P%,start`/`end` (`lineAlign`) | ❌ entire setting dropped, falls back to `auto` ¤ | ✅ | ✅ | ✅ | ✅ |
+| `align:end` | ✅ | ✅ | ✅ | ✅ | ✅ |
+| `vertical:rl` (rotated glyphs) | ✅ | ❌ renders horizontal | ✅ | ✅ | ✅ |
+| `vertical:lr` (rotated glyphs, opposite direction) | ✅ | ❌ renders horizontal | ✅ | ✅ | ✅ |
+| Text wraps inside a narrow `size` | ❌ overflows/clips as one line, no wrap | ✅ | ✅ | ✅ | ✅ |
+
+¤ This syntax is in the current spec, but under live dispute: see "A few smaller things worth knowing" on the [intro page](index.md) for why Chrome dropped it.
+
 ## `::cue()` selector types
 
 | Feature | Chrome 151 | Firefox 153 | Safari 26.6 | Safari TP 27.0 | iOS Safari 26.5 |
@@ -111,37 +142,6 @@ The SVG rows are the interesting reversal: a **network-loaded** SVG's own animat
 ‖ Firefox can't reach any of these through `::cue(.class)` at all (same argument-selector failure as the selector-types table above) — verified separately with a bare, class-free `::cue{}` rule instead, where the underlying animation behavior turns out identical to the other three browsers.
 
 Not independently re-tested on iOS Safari for either table on this page.
-
-## VTT cue settings
-
-| Feature | Chrome 151 | Firefox 153 | Safari 26.6 | Safari TP 27.0 | iOS Safari 26.5 |
-|---|---|---|---|---|---|
-| `line` / `position` / `align` / `size` (explicit %) | ✅ | ✅ | ✅ | ✅ | ✅ |
-| `line:N` (line-number snap-to-lines) | ✅ | ✅ | ✅ | ✅ | ✅ |
-| `line:-N` (negative line, count from bottom) | ✅ | ✅ | ✅ | ✅ | ✅ |
-| `position:P%,line-left`/`line-right` (`positionAlign`) | ❌ entire setting dropped, falls back to `auto` ¤ | ✅ | ✅ | ✅ | ✅ |
-| `line:P%,start`/`end` (`lineAlign`) | ❌ entire setting dropped, falls back to `auto` ¤ | ✅ | ✅ | ✅ | ✅ |
-| `align:end` | ✅ | ✅ | ✅ | ✅ | ✅ |
-| `vertical:rl` (rotated glyphs) | ✅ | ❌ renders horizontal | ✅ | ✅ | ✅ |
-| `vertical:lr` (rotated glyphs, opposite direction) | ✅ | ❌ renders horizontal | ✅ | ✅ | ✅ |
-| Text wraps inside a narrow `size` | ❌ overflows/clips as one line, no wrap | ✅ | ✅ | ✅ | ✅ |
-
-¤ This syntax is in the current spec, but under live dispute: see "A few smaller things worth knowing" on the [intro page](index.md) for why Chrome dropped it.
-
-## Markup tags & timestamps
-
-| Feature | Chrome 151 | Firefox 153 | Safari 26.6 | Safari TP 27.0 | iOS Safari 26.5 |
-|---|---|---|---|---|---|
-| `<i>` italic markup → native style | ✅ | ✅ | ✅ | ✅ | ✅ |
-| `<b>` bold markup → native style | ✅ | ✅ | ✅ | ✅ | ✅ |
-| `<u>` underline markup → native style | ✅ | ✅ | ✅ | ✅ | ✅ |
-| `<b><i>` nested markup | ✅ | ✅ | ✅ | ✅ | ✅ |
-| `<ruby>`/`<rt>` layout (annotation above base) | ✅ | ✅ | ✅ | ✅ | ✅ |
-| `<c.class>` class span | ✅ | ✅ | ✅ | ✅ | ✅ |
-| `<lang>` tag renders content | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Internal timestamp tag parsing (`<00:00:01.000>` → `getCueAsHTML()` timestamp node) | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Short internal timestamp tag `<MM:SS.mmm>` (no hours) | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Overlapping/simultaneous cue stacking (2 or 3 cues) | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 ## Parsing edge cases
 
