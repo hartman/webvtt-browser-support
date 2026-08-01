@@ -1,0 +1,7 @@
+{
+  "cases": [
+    { "label": "entities", "time": 1.0, "samples": [] },
+    { "label": "short-timestamp", "time": 2.5, "samples": [] },
+    { "label": "internal-short-timestamp", "time": 7.0, "samples": [] }
+  ]
+}

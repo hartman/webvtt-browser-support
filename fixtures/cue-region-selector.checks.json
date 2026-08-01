@@ -1,0 +1,9 @@
+{
+  "cases": [
+    { "label": "both-regions", "time": 1.0,
+      "samples": [
+        { "label": "reg1-box", "x": 40, "y": 15 },
+        { "label": "reg2-box", "x": 600, "y": 15 }
+      ] }
+  ]
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>WebVTT ::cue CSS properties (video.js)</title>
+<link rel="stylesheet" href="assets/videojs/video-js.min.css">
+<style>
+  body { margin: 0; background: #444; }
+  .video-js { width: 640px; height: 360px; }
+  /* <c.class> becomes <span class=" class">Text</span> with no inline style
+     of its own, so ordinary class selectors apply without !important. */
+  .bgcolor { background-color: red; color: white; }
+  .bgimage {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAO0lEQVR4Aa3BQQEAMAyEMIp/zzcLe5AcbHwYxw+JSUxiEpOYxCQmMYndYHw4xg+JSUxiEpOYxCQmMYk9im4GI651TeEAAAAASUVORK5CYII=);
+    color: white;
+  }
+</style>
+</head>
+<body>
+<video-js id="v" class="video-js" width="640" height="360" muted>
+  <source src="assets/blank.mp4" type="video/mp4">
+  <track kind="subtitles" src="cue-css-properties.vtt" srclang="en" default>
+</video-js>
+<script src="assets/videojs/video.min.js"></script>
+<script>videojs('v', { controls: false });</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>WebVTT internal timestamps + :past/:future (video.js)</title>
+<link rel="stylesheet" href="assets/videojs/video-js.min.css">
+<style>
+  body { margin: 0; background: #444; }
+  .video-js { width: 640px; height: 360px; }
+  .vjs-text-track-cue > div { font-size: 32px !important; color: white !important; }
+  /* No CSS rules for :past/:future here: video.js's vtt.js fork converts
+     internal cue timestamps to inert <?timestamp N?> processing-instruction
+     nodes with nothing to select, and the cue tree is never re-rendered on
+     timeupdate — confirmed by dumping the live DOM at two different times
+     within the same cue and seeing byte-identical markup. There is no CSS
+     equivalent to write here. */
+</style>
+</head>
+<body>
+<video-js id="v" class="video-js" width="640" height="360" muted>
+  <source src="assets/blank.mp4" type="video/mp4">
+  <track kind="subtitles" src="past-future.vtt" srclang="en" default>
+</video-js>
+<script src="assets/videojs/video.min.js"></script>
+<script>videojs('v', { controls: false });</script>
+</body>
+</html>

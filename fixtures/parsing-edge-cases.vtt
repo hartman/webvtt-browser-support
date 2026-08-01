@@ -1,0 +1,22 @@
+WEBVTT
+
+STYLE
+::cue { color: yellow; }
+
+NOTE
+This is a NOTE block. It must never be rendered or affect any other cue.
+Even across
+multiple lines.
+
+entities
+00:00:00.000 --> 00:00:02.000 line:84% position:50% align:center size:100%
+Fish &amp; Chips &lt;tag&gt; &amp;lrm;test&lrm;end &nbsp;pad&nbsp;pad
+
+NOTE this one-liner form should also be ignored
+short-timestamp
+00:01.500 --> 00:03.500 line:84% position:50% align:center size:100%
+Short MM:SS.mmm cue timing (no hours component)
+
+internal-short-timestamp
+00:00:05.000 --> 00:00:09.000 line:84% position:50% align:center size:100%
+<00:05.000>One<00:06.000> Two<00:07.000> Three<00:08.000> Four

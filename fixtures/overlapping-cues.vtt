@@ -1,0 +1,32 @@
+WEBVTT
+
+STYLE
+::cue { color: yellow; }
+
+exact-a
+00:00:00.000 --> 00:00:02.000
+First cue (exact overlap A)
+
+exact-b
+00:00:00.000 --> 00:00:02.000
+Second cue (exact overlap B)
+
+partial-a
+00:00:04.000 --> 00:00:08.000
+Long cue (partial A, 4-8s)
+
+partial-b
+00:00:06.000 --> 00:00:10.000
+Overlapping cue (partial B, 6-10s)
+
+triple-a
+00:00:12.000 --> 00:00:14.000
+One
+
+triple-b
+00:00:12.000 --> 00:00:14.000
+Two
+
+triple-c
+00:00:12.000 --> 00:00:14.000
+Three

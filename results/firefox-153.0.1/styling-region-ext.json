@@ -1,0 +1,42 @@
+{
+  "fixture": "styling-region-ext",
+  "browser": "firefox-153.0.1",
+  "cases": [
+    {
+      "label": "line1-only",
+      "time": 1,
+      "screenshot": "styling-region-ext-line1-only.png",
+      "samples": []
+    },
+    {
+      "label": "line1-line2-overlap",
+      "time": 2.5,
+      "screenshot": "styling-region-ext-line1-line2-overlap.png",
+      "samples": []
+    },
+    {
+      "label": "line2-line3-overlap",
+      "time": 4.5,
+      "screenshot": "styling-region-ext-line2-line3-overlap.png",
+      "samples": []
+    },
+    {
+      "label": "line3-line4-overlap",
+      "time": 6.5,
+      "screenshot": "styling-region-ext-line3-line4-overlap.png",
+      "samples": []
+    },
+    {
+      "label": "line4-only",
+      "time": 8.5,
+      "screenshot": "styling-region-ext-line4-only.png",
+      "samples": []
+    },
+    {
+      "label": "no-region",
+      "time": 10,
+      "screenshot": "styling-region-ext-no-region.png",
+      "samples": []
+    }
+  ]
+}

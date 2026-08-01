@@ -1,0 +1,5 @@
+body { margin: 0; background: #444; }
+video { display: block; width: 640px; height: 360px; }
+
+video::cue(#alpha) { background-color: orange; color: black; }
+video::cue(#beta) { background-color: purple; color: white; }

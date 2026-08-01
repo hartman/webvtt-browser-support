@@ -1,0 +1,279 @@
+{
+  "fixture": "styling-cue",
+  "browser": "firefox-153.0.1",
+  "cases": [
+    {
+      "label": "no-cue",
+      "time": 11,
+      "screenshot": "styling-cue-no-cue.png",
+      "samples": [
+        {
+          "label": "center",
+          "x": 320,
+          "y": 300,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        }
+      ]
+    },
+    {
+      "label": "plain",
+      "time": 1,
+      "screenshot": "styling-cue-plain.png",
+      "samples": [
+        {
+          "label": "y280",
+          "x": 320,
+          "y": 280,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y295",
+          "x": 320,
+          "y": 295,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y310",
+          "x": 320,
+          "y": 310,
+          "pixel": {
+            "r": 250,
+            "g": 250,
+            "b": 250,
+            "a": 255
+          }
+        },
+        {
+          "label": "y325",
+          "x": 320,
+          "y": 325,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        }
+      ]
+    },
+    {
+      "label": "red",
+      "time": 3,
+      "screenshot": "styling-cue-red.png",
+      "samples": [
+        {
+          "label": "y280",
+          "x": 320,
+          "y": 280,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y295",
+          "x": 320,
+          "y": 295,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y310",
+          "x": 320,
+          "y": 310,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y325",
+          "x": 320,
+          "y": 325,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        }
+      ]
+    },
+    {
+      "label": "voice-blue",
+      "time": 5,
+      "screenshot": "styling-cue-voice-blue.png",
+      "samples": [
+        {
+          "label": "y280",
+          "x": 320,
+          "y": 280,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y295",
+          "x": 320,
+          "y": 295,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y310",
+          "x": 320,
+          "y": 310,
+          "pixel": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          }
+        },
+        {
+          "label": "y325",
+          "x": 320,
+          "y": 325,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        }
+      ]
+    },
+    {
+      "label": "class-yellow",
+      "time": 7,
+      "screenshot": "styling-cue-class-yellow.png",
+      "samples": [
+        {
+          "label": "y280",
+          "x": 320,
+          "y": 280,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y295",
+          "x": 320,
+          "y": 295,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y310",
+          "x": 320,
+          "y": 310,
+          "pixel": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          }
+        },
+        {
+          "label": "y325",
+          "x": 320,
+          "y": 325,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        }
+      ]
+    },
+    {
+      "label": "bold-green",
+      "time": 9,
+      "screenshot": "styling-cue-bold-green.png",
+      "samples": [
+        {
+          "label": "y280",
+          "x": 320,
+          "y": 280,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y295",
+          "x": 320,
+          "y": 295,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y310",
+          "x": 320,
+          "y": 310,
+          "pixel": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          }
+        },
+        {
+          "label": "y325",
+          "x": 320,
+          "y": 325,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        }
+      ]
+    }
+  ]
+}

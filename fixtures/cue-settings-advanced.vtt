@@ -1,0 +1,32 @@
+WEBVTT
+
+STYLE
+::cue { color: yellow; }
+
+position-align-line-left
+00:00:00.000 --> 00:00:02.000 position:10%,line-left align:left size:50%
+PositionAlign line-left
+
+position-align-line-right
+00:00:02.000 --> 00:00:04.000 position:90%,line-right align:right size:50%
+PositionAlign line-right
+
+line-align-start
+00:00:04.000 --> 00:00:06.000 line:50%,start position:50% align:center
+LineAlign start
+
+line-align-end
+00:00:06.000 --> 00:00:08.000 line:50%,end position:50% align:center
+LineAlign end
+
+negative-line
+00:00:08.000 --> 00:00:10.000 line:-1 align:center
+Negative line -1
+
+vertical-lr
+00:00:10.000 --> 00:00:12.000 vertical:lr line:84% position:50% align:center
+Vertical LR text
+
+align-end
+00:00:12.000 --> 00:00:14.000 align:end position:90% size:50%
+Align end text

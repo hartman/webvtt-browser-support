@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>WebVTT ::cue-region(#id) selector argument</title>
+<style>
+  body { margin: 0; background: #444; }
+  video { display: block; width: 640px; height: 360px; }
+  video::cue { color: yellow; }
+  video::cue-region { background-color: rgba(0,80,160,0.6); }
+  video::cue-region(#reg2) { background-color: rgba(200,0,0,0.6); }
+</style>
+</head>
+<body>
+<video id="v" width="640" height="360" muted>
+  <source src="assets/blank.mp4" type="video/mp4">
+  <track kind="subtitles" src="cue-region-selector-page-style.vtt" srclang="en" default>
+</video>
+</body>
+</html>

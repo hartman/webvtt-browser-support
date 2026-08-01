@@ -1,0 +1,10 @@
+{
+  "cases": [
+    { "label": "italic", "time": 1.0, "samples": [] },
+    { "label": "bold", "time": 3.0, "samples": [] },
+    { "label": "underline", "time": 5.0, "samples": [] },
+    { "label": "nested", "time": 7.0, "samples": [] },
+    { "label": "ruby", "time": 9.0, "samples": [] },
+    { "label": "lang", "time": 11.0, "samples": [] }
+  ]
+}

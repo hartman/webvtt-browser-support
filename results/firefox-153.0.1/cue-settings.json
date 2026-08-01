@@ -1,0 +1,140 @@
+{
+  "fixture": "cue-settings",
+  "browser": "firefox-153.0.1",
+  "cases": [
+    {
+      "label": "line-pct",
+      "time": 1,
+      "screenshot": "cue-settings-line-pct.png",
+      "samples": [
+        {
+          "label": "top-area",
+          "x": 320,
+          "y": 40,
+          "pixel": {
+            "r": 201,
+            "g": 201,
+            "b": 201,
+            "a": 255
+          }
+        },
+        {
+          "label": "bottom-area",
+          "x": 320,
+          "y": 320,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        }
+      ]
+    },
+    {
+      "label": "line-num",
+      "time": 3,
+      "screenshot": "cue-settings-line-num.png",
+      "samples": [
+        {
+          "label": "top-area",
+          "x": 320,
+          "y": 20,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "second-line",
+          "x": 320,
+          "y": 50,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        }
+      ]
+    },
+    {
+      "label": "position-left",
+      "time": 5,
+      "screenshot": "cue-settings-position-left.png",
+      "samples": [
+        {
+          "label": "left-area",
+          "x": 60,
+          "y": 300,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "right-area",
+          "x": 580,
+          "y": 300,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        }
+      ]
+    },
+    {
+      "label": "position-right",
+      "time": 7,
+      "screenshot": "cue-settings-position-right.png",
+      "samples": [
+        {
+          "label": "left-area",
+          "x": 60,
+          "y": 300,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "right-area",
+          "x": 580,
+          "y": 300,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        }
+      ]
+    },
+    {
+      "label": "size-narrow",
+      "time": 9,
+      "screenshot": "cue-settings-size-narrow.png",
+      "samples": []
+    },
+    {
+      "label": "vertical-rl",
+      "time": 11,
+      "screenshot": "cue-settings-vertical-rl.png",
+      "samples": []
+    },
+    {
+      "label": "align-start",
+      "time": 13,
+      "screenshot": "cue-settings-align-start.png",
+      "samples": []
+    }
+  ]
+}

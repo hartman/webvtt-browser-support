@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>WebVTT API feature detect</title>
+</head>
+<body>
+<video id="v" width="320" height="240" muted>
+  <track id="track" kind="subtitles" src="api-detect.vtt" srclang="en" default>
+</video>
+<script>
+  // Give the track a moment to load so textTracks[0].cues is populated.
+  window.__ready = false;
+  document.getElementById('track').addEventListener('load', () => { window.__ready = true; });
+  setTimeout(() => { window.__ready = true; }, 1500);
+</script>
+</body>
+</html>

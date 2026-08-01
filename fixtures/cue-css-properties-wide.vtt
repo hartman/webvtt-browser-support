@@ -1,0 +1,59 @@
+WEBVTT
+
+STYLE
+::cue(.font-test) { font: italic 900 32px "Courier New", monospace; color: yellow; }
+::cue(.lh-test) { line-height: 3; color: yellow; }
+::cue(.opacity-test) { opacity: 0.3; color: white; }
+::cue(.outline-test) { outline: 6px solid orange; color: white; }
+::cue(.decoration-test) { text-decoration: underline wavy red; color: white; }
+::cue(.shadow-test) { text-shadow: 6px 6px 0 red; color: white; }
+::cue(.visible-part) { color: yellow; }
+::cue(.hidden-part) { visibility: hidden; background-color: blue; }
+::cue(.whitespace-test) { white-space: pre; color: yellow; }
+::cue(ruby) { ruby-position: under; }
+::cue(rt) { color: magenta; }
+::cue(.tcu-test) { text-combine-upright: all; color: cyan; }
+
+font
+00:00:00.000 --> 00:00:02.000 line:50% position:50% align:center size:100%
+<c.font-test>Font shorthand test</c>
+
+line-height
+00:00:02.000 --> 00:00:04.000 line:50% position:50% align:center size:20%
+<c.lh-test>This long sentence should wrap across several lines with extra spacing between them</c>
+
+opacity
+00:00:04.000 --> 00:00:06.000 line:50% position:50% align:center size:100%
+<c.opacity-test>Opacity test text</c>
+
+outline
+00:00:06.000 --> 00:00:08.000 line:50% position:50% align:center size:100%
+<c.outline-test>Outline test text</c>
+
+text-decoration
+00:00:08.000 --> 00:00:10.000 line:50% position:50% align:center size:100%
+<c.decoration-test>Decoration test text</c>
+
+text-shadow
+00:00:10.000 --> 00:00:12.000 line:50% position:50% align:center size:100%
+<c.shadow-test>Shadow test text</c>
+
+visibility
+00:00:12.000 --> 00:00:14.000 line:50% position:50% align:center size:100%
+<c.visible-part>Visible </c><c.hidden-part>HiddenPart</c>
+
+white-space
+00:00:14.000 --> 00:00:16.000 line:50% position:50% align:center size:100%
+<c.whitespace-test>A     B</c>
+
+ruby-position
+00:00:16.000 --> 00:00:18.000 line:40% position:50% align:center size:100%
+<ruby>base<rt>anno</rt></ruby>
+
+text-combine-upright
+00:00:18.000 --> 00:00:20.000 vertical:rl line:50% position:50% align:center
+Vertical <c.tcu-test>12</c> combine
+
+text-combine-upright-control
+00:00:20.000 --> 00:00:22.000 vertical:rl line:50% position:50% align:center
+Vertical 12 uncombined

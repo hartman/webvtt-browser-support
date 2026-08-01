@@ -1,0 +1,40 @@
+{
+  "VTTCue": {
+    "present": true,
+    "props": {
+      "align": "string",
+      "id": "string",
+      "line": "string",
+      "lineAlign": "string",
+      "position": "string",
+      "positionAlign": "string",
+      "region": "object",
+      "size": "number",
+      "snapToLines": "boolean",
+      "text": "string",
+      "vertical": "string"
+    }
+  },
+  "VTTRegion": {
+    "present": true,
+    "props": {
+      "id": "string",
+      "lines": "number",
+      "regionAnchorX": "number",
+      "regionAnchorY": "number",
+      "scroll": "string",
+      "viewportAnchorX": "number",
+      "viewportAnchorY": "number",
+      "width": "number"
+    }
+  },
+  "textTrack": {
+    "activeCuesPresent": true,
+    "cueCount": 2,
+    "cuesPresent": true,
+    "kind": "subtitles",
+    "mode": "showing"
+  },
+  "textTracksLength": 1,
+  "trackElement": true
+}

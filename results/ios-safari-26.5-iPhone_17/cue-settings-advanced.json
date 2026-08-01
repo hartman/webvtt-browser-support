@@ -1,0 +1,48 @@
+{
+  "fixture": "cue-settings-advanced",
+  "browser": "ios-safari-26.5-iPhone_17",
+  "cases": [
+    {
+      "label": "position-align-line-left",
+      "time": 1,
+      "screenshot": "cue-settings-advanced-position-align-line-left.png",
+      "samples": []
+    },
+    {
+      "label": "position-align-line-right",
+      "time": 3,
+      "screenshot": "cue-settings-advanced-position-align-line-right.png",
+      "samples": []
+    },
+    {
+      "label": "line-align-start",
+      "time": 5,
+      "screenshot": "cue-settings-advanced-line-align-start.png",
+      "samples": []
+    },
+    {
+      "label": "line-align-end",
+      "time": 7,
+      "screenshot": "cue-settings-advanced-line-align-end.png",
+      "samples": []
+    },
+    {
+      "label": "negative-line",
+      "time": 9,
+      "screenshot": "cue-settings-advanced-negative-line.png",
+      "samples": []
+    },
+    {
+      "label": "vertical-lr",
+      "time": 11,
+      "screenshot": "cue-settings-advanced-vertical-lr.png",
+      "samples": []
+    },
+    {
+      "label": "align-end",
+      "time": 13,
+      "screenshot": "cue-settings-advanced-align-end.png",
+      "samples": []
+    }
+  ]
+}

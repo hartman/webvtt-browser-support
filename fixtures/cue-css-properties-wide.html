@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>WebVTT ::cue() wider CSS property list (in-file STYLE block)</title>
+<style>
+  body { margin: 0; background: #444; }
+  video { display: block; width: 640px; height: 360px; }
+  /* No ::cue rules here — all styling comes from the STYLE block inside
+     cue-css-properties-wide-style-block.vtt itself. */
+</style>
+</head>
+<body>
+<video id="v" width="640" height="360" muted>
+  <source src="assets/blank.mp4" type="video/mp4">
+  <track kind="subtitles" src="cue-css-properties-wide.vtt" srclang="en" default>
+</video>
+</body>
+</html>

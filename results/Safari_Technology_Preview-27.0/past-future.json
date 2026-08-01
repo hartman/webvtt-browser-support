@@ -1,0 +1,42 @@
+{
+  "fixture": "past-future",
+  "browser": "Safari_Technology_Preview-27.0",
+  "cases": [
+    {
+      "label": "all-future",
+      "time": 0.5,
+      "screenshot": "past-future-all-future.png",
+      "samples": []
+    },
+    {
+      "label": "one-past",
+      "time": 1.5,
+      "screenshot": "past-future-one-past.png",
+      "samples": []
+    },
+    {
+      "label": "two-past",
+      "time": 2.5,
+      "screenshot": "past-future-two-past.png",
+      "samples": []
+    },
+    {
+      "label": "three-past",
+      "time": 3.5,
+      "screenshot": "past-future-three-past.png",
+      "samples": []
+    },
+    {
+      "label": "all-past",
+      "time": 4.5,
+      "screenshot": "past-future-all-past.png",
+      "samples": []
+    },
+    {
+      "label": "ended",
+      "time": 5.5,
+      "screenshot": "past-future-ended.png",
+      "samples": []
+    }
+  ]
+}

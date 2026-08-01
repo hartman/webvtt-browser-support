@@ -1,0 +1,22 @@
+{
+  "name": "webvtt-browser-support-drivers",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "safari": "node run-safari.js",
+    "safari-tp": "node run-safari-tp.js",
+    "firefox": "node run-firefox.js",
+    "chrome": "node run-chrome.js",
+    "ios-safari": "node run-ios-safari.js",
+    "appium": "appium"
+  },
+  "dependencies": {
+    "pngjs": "^7.0.0",
+    "selenium-webdriver": "^4.27.0",
+    "video.js": "^8.23.9"
+  },
+  "devDependencies": {
+    "appium": "^3.6.0",
+    "appium-xcuitest-driver": "^12.1.3"
+  }
+}

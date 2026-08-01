@@ -1,0 +1,44 @@
+WEBVTT
+
+STYLE
+::cue(i) { color: orange; }
+::cue(u) { color: cyan; }
+::cue(ruby) { color: magenta; }
+::cue(rt) { color: yellow; }
+::cue(v) { color: lightgreen; }
+::cue(b.hl) { color: red; }
+::cue(v[voice="Bob"].hl) { color: blue; }
+::cue(:lang(ja)) { color: pink; }
+::cue(:lang("fr")) { color: aqua; }
+
+tag-i
+00:00:00.000 --> 00:00:02.000 line:84% position:50% align:center size:100%
+<i>Italic via tag selector</i>
+
+tag-u
+00:00:02.000 --> 00:00:04.000 line:84% position:50% align:center size:100%
+<u>Underline via tag selector</u>
+
+tag-ruby
+00:00:04.000 --> 00:00:06.000 line:70% position:50% align:center size:100%
+<ruby>base<rt>rt</rt></ruby>
+
+tag-v-nofilter
+00:00:06.000 --> 00:00:08.000 line:84% position:50% align:center size:100%
+<v Bob>Voice no filter</v>
+
+compound-tag-class
+00:00:08.000 --> 00:00:10.000 line:84% position:50% align:center size:100%
+<b.hl>Bold plus class</b>
+
+compound-voice-class
+00:00:10.000 --> 00:00:12.000 line:84% position:50% align:center size:100%
+<v.hl Bob>Voice plus class</v>
+
+pseudo-lang
+00:00:12.000 --> 00:00:14.000 line:84% position:50% align:center size:100%
+<lang ja>日本語テキスト</lang>
+
+pseudo-lang-quoted
+00:00:14.000 --> 00:00:16.000 line:84% position:50% align:center size:100%
+<lang fr>Texte en français</lang>

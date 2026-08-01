@@ -1,0 +1,4 @@
+body { margin: 0; background: #444; }
+video { display: block; width: 640px; height: 360px; }
+video::cue-region { background-color: rgba(0,80,160,0.6); }
+video::cue { color: yellow; }

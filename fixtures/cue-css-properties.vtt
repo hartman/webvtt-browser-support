@@ -1,0 +1,16 @@
+WEBVTT
+
+STYLE
+::cue(.bgcolor) { background-color: red; color: white; }
+::cue(.bgimage) {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAO0lEQVR4Aa3BQQEAMAyEMIp/zzcLe5AcbHwYxw+JSUxiEpOYxCQmMYndYHw4xg+JSUxiEpOYxCQmMYk9im4GI651TeEAAAAASUVORK5CYII=);
+  color: white;
+}
+
+bg-color
+00:00:00.000 --> 00:00:02.000 line:84% position:50% align:center size:100%
+<c.bgcolor>Background-color cue</c>
+
+bg-image
+00:00:02.000 --> 00:00:04.000 line:84% position:50% align:center size:100%
+<c.bgimage>Background-image cue</c>

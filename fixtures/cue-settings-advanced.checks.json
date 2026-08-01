@@ -1,0 +1,11 @@
+{
+  "cases": [
+    { "label": "position-align-line-left", "time": 1.0, "samples": [] },
+    { "label": "position-align-line-right", "time": 3.0, "samples": [] },
+    { "label": "line-align-start", "time": 5.0, "samples": [] },
+    { "label": "line-align-end", "time": 7.0, "samples": [] },
+    { "label": "negative-line", "time": 9.0, "samples": [] },
+    { "label": "vertical-lr", "time": 11.0, "samples": [] },
+    { "label": "align-end", "time": 13.0, "samples": [] }
+  ]
+}

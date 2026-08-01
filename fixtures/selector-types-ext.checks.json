@@ -1,0 +1,12 @@
+{
+  "cases": [
+    { "label": "tag-i", "time": 1.0, "samples": [] },
+    { "label": "tag-u", "time": 3.0, "samples": [] },
+    { "label": "tag-ruby", "time": 5.0, "samples": [] },
+    { "label": "tag-v-nofilter", "time": 7.0, "samples": [] },
+    { "label": "compound-tag-class", "time": 9.0, "samples": [] },
+    { "label": "compound-voice-class", "time": 11.0, "samples": [] },
+    { "label": "pseudo-lang", "time": 13.0, "samples": [] },
+    { "label": "pseudo-lang-quoted", "time": 15.0, "samples": [] }
+  ]
+}

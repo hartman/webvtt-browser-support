@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>WebVTT ::cue() selector types</title>
+<style>
+  body { margin: 0; background: #444; }
+  video { display: block; width: 640px; height: 360px; }
+  video::cue(i) { color: orange; }
+  video::cue(u) { color: cyan; }
+  video::cue(ruby) { color: magenta; }
+  video::cue(rt) { color: yellow; }
+  video::cue(v) { color: lightgreen; }
+  video::cue(b.hl) { color: red; }
+  video::cue(v[voice="Bob"].hl) { color: blue; }
+  video::cue(:lang(ja)) { color: pink; }
+  video::cue(:lang("fr")) { color: aqua; }
+</style>
+</head>
+<body>
+<video id="v" width="640" height="360" muted>
+  <source src="assets/blank.mp4" type="video/mp4">
+  <track kind="subtitles" src="selector-types-page-style.vtt" srclang="en" default>
+</video>
+</body>
+</html>

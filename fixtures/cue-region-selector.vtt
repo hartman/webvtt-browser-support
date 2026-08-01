@@ -1,0 +1,30 @@
+WEBVTT
+
+STYLE
+::cue { color: yellow; }
+::cue-region { background-color: rgba(0,80,160,0.6); }
+::cue-region(#reg2) { background-color: rgba(200,0,0,0.6); }
+
+REGION
+id:reg1
+width:40%
+lines:2
+regionanchor:0%,0%
+viewportanchor:0%,0%
+scroll:up
+
+REGION
+id:reg2
+width:40%
+lines:2
+regionanchor:100%,0%
+viewportanchor:100%,0%
+scroll:up
+
+reg1-cue
+00:00:00.000 --> 00:00:03.000 region:reg1 align:start
+Region one (bare ::cue-region)
+
+reg2-cue
+00:00:00.000 --> 00:00:03.000 region:reg2 align:start
+Region two (::cue-region selector)

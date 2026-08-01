@@ -1,0 +1,29 @@
+WEBVTT
+
+line-pct
+00:00:00.000 --> 00:00:02.000 line:10% position:50% align:center size:100%
+Line 10 percent (near top)
+
+line-num
+00:00:02.000 --> 00:00:04.000 line:2 align:center
+Line index 2 (snap to lines)
+
+position-left
+00:00:04.000 --> 00:00:06.000 line:84% position:10% align:left size:30%
+Left aligned
+
+position-right
+00:00:06.000 --> 00:00:08.000 line:84% position:90% align:right size:30%
+Right aligned
+
+size-narrow
+00:00:08.000 --> 00:00:10.000 line:84% position:50% align:center size:20%
+Narrow size cue that should wrap onto more than one line because it is long text
+
+vertical-rl
+00:00:10.000 --> 00:00:12.000 vertical:rl line:84% position:50% align:center
+Vertical RL text
+
+align-start
+00:00:12.000 --> 00:00:14.000 line:84% position:10% align:start size:80%
+Start aligned text

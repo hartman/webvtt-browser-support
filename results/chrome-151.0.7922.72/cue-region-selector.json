@@ -1,0 +1,35 @@
+{
+  "fixture": "cue-region-selector",
+  "browser": "chrome-151.0.7922.72",
+  "cases": [
+    {
+      "label": "both-regions",
+      "time": 1,
+      "screenshot": "cue-region-selector-both-regions.png",
+      "samples": [
+        {
+          "label": "reg1-box",
+          "x": 40,
+          "y": 15,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "reg2-box",
+          "x": 600,
+          "y": 15,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        }
+      ]
+    }
+  ]
+}

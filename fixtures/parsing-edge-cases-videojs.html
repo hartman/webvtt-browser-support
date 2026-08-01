@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>WebVTT parsing edge cases (video.js)</title>
+<link rel="stylesheet" href="assets/videojs/video-js.min.css">
+<style>
+  body { margin: 0; background: #444; }
+  .video-js { width: 640px; height: 360px; }
+  .vjs-text-track-cue > div { color: yellow !important; }
+</style>
+</head>
+<body>
+<video-js id="v" class="video-js" width="640" height="360" muted>
+  <source src="assets/blank.mp4" type="video/mp4">
+  <track kind="subtitles" src="parsing-edge-cases.vtt" srclang="en" default>
+</video-js>
+<script src="assets/videojs/video.min.js"></script>
+<script>videojs('v', { controls: false });</script>
+</body>
+</html>

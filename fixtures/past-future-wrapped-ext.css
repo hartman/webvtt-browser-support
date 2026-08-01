@@ -1,0 +1,19 @@
+body { margin: 0; background: #444; }
+video { display: block; width: 640px; height: 360px; }
+video::cue { font-size: 28px; color: white; }
+
+/* baseline: original bare form on plain text (no element wrapping) */
+video::cue(:past) { color: lime; }
+video::cue(:future) { color: red; }
+
+/* tag-qualified pseudo on <c> wrapped text */
+video::cue(c.testc:past) { color: lime; }
+video::cue(c.testc:future) { color: red; }
+
+/* tag-qualified pseudo on <v> wrapped text */
+video::cue(v.testv:past) { color: lime; }
+video::cue(v.testv:future) { color: red; }
+
+/* explicit universal selector + pseudo, per spec grammar ::cue(*:past) */
+video::cue(*.teststar:past) { color: orange; }
+video::cue(*.teststar:future) { color: blue; }

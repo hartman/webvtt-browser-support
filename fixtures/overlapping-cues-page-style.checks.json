@@ -1,0 +1,9 @@
+{
+  "cases": [
+    { "label": "exact-overlap", "time": 1.0, "samples": [] },
+    { "label": "partial-before", "time": 5.0, "samples": [] },
+    { "label": "partial-during", "time": 7.0, "samples": [] },
+    { "label": "partial-after", "time": 9.0, "samples": [] },
+    { "label": "triple-overlap", "time": 13.0, "samples": [] }
+  ]
+}

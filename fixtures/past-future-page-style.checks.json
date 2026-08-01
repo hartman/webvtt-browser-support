@@ -1,0 +1,10 @@
+{
+  "cases": [
+    { "label": "all-future", "time": 0.5, "samples": [] },
+    { "label": "one-past", "time": 1.5, "samples": [] },
+    { "label": "two-past", "time": 2.5, "samples": [] },
+    { "label": "three-past", "time": 3.5, "samples": [] },
+    { "label": "all-past", "time": 4.5, "samples": [] },
+    { "label": "ended", "time": 5.5, "samples": [] }
+  ]
+}

@@ -1,0 +1,21 @@
+WEBVTT
+
+plain
+00:00:00.000 --> 00:00:02.000 line:84% position:50% align:center size:100%
+Plain cue
+
+red
+00:00:02.000 --> 00:00:04.000 line:84% position:50% align:center size:100%
+<c.redbg>Red cue</c>
+
+voice
+00:00:04.000 --> 00:00:06.000 line:84% position:50% align:center size:100%
+<v Bob>Voice styled cue</v>
+
+classspan
+00:00:06.000 --> 00:00:08.000 line:84% position:50% align:center size:100%
+<c.highlight>Highlighted span</c>
+
+markup
+00:00:08.000 --> 00:00:10.000 line:84% position:50% align:center size:100%
+<b>Bold text</b>

@@ -1,0 +1,117 @@
+{
+  "fixture": "cue-css-properties-wide",
+  "browser": "Safari-26.6",
+  "cases": [
+    {
+      "label": "font",
+      "time": 1,
+      "screenshot": "cue-css-properties-wide-font.png",
+      "samples": []
+    },
+    {
+      "label": "line-height",
+      "time": 3,
+      "screenshot": "cue-css-properties-wide-line-height.png",
+      "samples": []
+    },
+    {
+      "label": "opacity",
+      "time": 5,
+      "screenshot": "cue-css-properties-wide-opacity.png",
+      "samples": [
+        {
+          "label": "y172",
+          "x": 320,
+          "y": 172,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y178",
+          "x": 320,
+          "y": 178,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y184",
+          "x": 320,
+          "y": 184,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y190",
+          "x": 320,
+          "y": 190,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        }
+      ]
+    },
+    {
+      "label": "outline",
+      "time": 7,
+      "screenshot": "cue-css-properties-wide-outline.png",
+      "samples": []
+    },
+    {
+      "label": "text-decoration",
+      "time": 9,
+      "screenshot": "cue-css-properties-wide-text-decoration.png",
+      "samples": []
+    },
+    {
+      "label": "text-shadow",
+      "time": 11,
+      "screenshot": "cue-css-properties-wide-text-shadow.png",
+      "samples": []
+    },
+    {
+      "label": "visibility",
+      "time": 13,
+      "screenshot": "cue-css-properties-wide-visibility.png",
+      "samples": []
+    },
+    {
+      "label": "white-space",
+      "time": 15,
+      "screenshot": "cue-css-properties-wide-white-space.png",
+      "samples": []
+    },
+    {
+      "label": "ruby-position",
+      "time": 17,
+      "screenshot": "cue-css-properties-wide-ruby-position.png",
+      "samples": []
+    },
+    {
+      "label": "text-combine-upright",
+      "time": 19,
+      "screenshot": "cue-css-properties-wide-text-combine-upright.png",
+      "samples": []
+    },
+    {
+      "label": "text-combine-upright-control",
+      "time": 21,
+      "screenshot": "cue-css-properties-wide-text-combine-upright-control.png",
+      "samples": []
+    }
+  ]
+}

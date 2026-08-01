@@ -1,0 +1,30 @@
+{
+  "fixture": "past-future-wrapped-ext",
+  "browser": "chrome-151.0.7922.72",
+  "cases": [
+    {
+      "label": "plain-text-mid",
+      "time": 3.5,
+      "screenshot": "past-future-wrapped-ext-plain-text-mid.png",
+      "samples": []
+    },
+    {
+      "label": "wrapped-c-mid",
+      "time": 7.5,
+      "screenshot": "past-future-wrapped-ext-wrapped-c-mid.png",
+      "samples": []
+    },
+    {
+      "label": "wrapped-v-mid",
+      "time": 12.5,
+      "screenshot": "past-future-wrapped-ext-wrapped-v-mid.png",
+      "samples": []
+    },
+    {
+      "label": "universal-star-mid",
+      "time": 17.5,
+      "screenshot": "past-future-wrapped-ext-universal-star-mid.png",
+      "samples": []
+    }
+  ]
+}

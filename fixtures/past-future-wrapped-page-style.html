@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>WebVTT :past/:future — plain text vs element-wrapped text vs universal selector</title>
+<style>
+  body { margin: 0; background: #444; }
+  video { display: block; width: 640px; height: 360px; }
+  video::cue { font-size: 28px; color: white; }
+
+  /* baseline: original bare form on plain text (no element wrapping) */
+  video::cue(:past) { color: lime; }
+  video::cue(:future) { color: red; }
+
+  /* tag-qualified pseudo on <c> wrapped text */
+  video::cue(c.testc:past) { color: lime; }
+  video::cue(c.testc:future) { color: red; }
+
+  /* tag-qualified pseudo on <v> wrapped text */
+  video::cue(v.testv:past) { color: lime; }
+  video::cue(v.testv:future) { color: red; }
+
+  /* explicit universal selector + pseudo, per spec grammar ::cue(*:past) */
+  video::cue(*.teststar:past) { color: orange; }
+  video::cue(*.teststar:future) { color: blue; }
+</style>
+</head>
+<body>
+<video id="v" width="640" height="360" muted>
+  <source src="assets/blank.mp4" type="video/mp4">
+  <track kind="subtitles" src="past-future-wrapped-page-style.vtt" srclang="en" default>
+</video>
+</body>
+</html>

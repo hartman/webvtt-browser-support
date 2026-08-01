@@ -1,0 +1,24 @@
+{
+  "fixture": "parsing-edge-cases-page-style",
+  "browser": "firefox-153.0.1",
+  "cases": [
+    {
+      "label": "entities",
+      "time": 1,
+      "screenshot": "parsing-edge-cases-page-style-entities.png",
+      "samples": []
+    },
+    {
+      "label": "short-timestamp",
+      "time": 2.5,
+      "screenshot": "parsing-edge-cases-page-style-short-timestamp.png",
+      "samples": []
+    },
+    {
+      "label": "internal-short-timestamp",
+      "time": 7,
+      "screenshot": "parsing-edge-cases-page-style-internal-short-timestamp.png",
+      "samples": []
+    }
+  ]
+}

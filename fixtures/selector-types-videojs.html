@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>WebVTT selector types (video.js)</title>
+<link rel="stylesheet" href="assets/videojs/video-js.min.css">
+<style>
+  body { margin: 0; background: #444; }
+  .video-js { width: 640px; height: 360px; }
+  i { color: orange; }
+  u { color: cyan; }
+  ruby { color: magenta; }
+  rt { color: yellow; }
+  /* No <v> tag exists in the rendered DOM at all — <v Bob> becomes
+     <span title="Bob">, so [title] is the closest structural equivalent to
+     a bare, filter-less voice selector. */
+  [title] { color: lightgreen; }
+  b.hl { color: red; }
+  [title="Bob"].hl { color: blue; }
+  /* <lang ja> becomes <span lang="ja">, so this is genuinely the browser's
+     native CSS :lang() pseudo-class operating on real DOM — not a
+     WebVTT-specific reimplementation, so it's expected to just work. */
+  :lang(ja) { color: pink; }
+  :lang(fr) { color: aqua; }
+</style>
+</head>
+<body>
+<video-js id="v" class="video-js" width="640" height="360" muted>
+  <source src="assets/blank.mp4" type="video/mp4">
+  <track kind="subtitles" src="selector-types.vtt" srclang="en" default>
+</video-js>
+<script src="assets/videojs/video.min.js"></script>
+<script>videojs('v', { controls: false });</script>
+</body>
+</html>

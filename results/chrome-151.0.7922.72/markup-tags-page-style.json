@@ -1,0 +1,42 @@
+{
+  "fixture": "markup-tags-page-style",
+  "browser": "chrome-151.0.7922.72",
+  "cases": [
+    {
+      "label": "italic",
+      "time": 1,
+      "screenshot": "markup-tags-page-style-italic.png",
+      "samples": []
+    },
+    {
+      "label": "bold",
+      "time": 3,
+      "screenshot": "markup-tags-page-style-bold.png",
+      "samples": []
+    },
+    {
+      "label": "underline",
+      "time": 5,
+      "screenshot": "markup-tags-page-style-underline.png",
+      "samples": []
+    },
+    {
+      "label": "nested",
+      "time": 7,
+      "screenshot": "markup-tags-page-style-nested.png",
+      "samples": []
+    },
+    {
+      "label": "ruby",
+      "time": 9,
+      "screenshot": "markup-tags-page-style-ruby.png",
+      "samples": []
+    },
+    {
+      "label": "lang",
+      "time": 11,
+      "screenshot": "markup-tags-page-style-lang.png",
+      "samples": []
+    }
+  ]
+}

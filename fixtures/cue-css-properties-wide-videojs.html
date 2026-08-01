@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>WebVTT ::cue wider CSS properties (video.js)</title>
+<link rel="stylesheet" href="assets/videojs/video-js.min.css">
+<style>
+  body { margin: 0; background: #444; }
+  .video-js { width: 640px; height: 360px; }
+  .vjs-text-track-cue > div { color: white !important; }
+
+  .font-test { font: italic 900 32px "Courier New", monospace; color: yellow; }
+  .lh-test { line-height: 3; color: yellow; }
+  .opacity-test { opacity: 0.3; color: white; }
+  .outline-test { outline: 6px solid orange; color: white; }
+  .decoration-test { text-decoration: underline wavy red; color: white; }
+  .shadow-test { text-shadow: 6px 6px 0 red; color: white; }
+  .visible-part { color: yellow; }
+  .hidden-part { visibility: hidden; background-color: blue; }
+  .whitespace-test { white-space: pre; color: yellow; }
+  ruby { ruby-position: under; }
+  rt { color: magenta; }
+  .tcu-test { text-combine-upright: all; color: cyan; }
+</style>
+</head>
+<body>
+<video-js id="v" class="video-js" width="640" height="360" muted>
+  <source src="assets/blank.mp4" type="video/mp4">
+  <track kind="subtitles" src="cue-css-properties-wide.vtt" srclang="en" default>
+</video-js>
+<script src="assets/videojs/video.min.js"></script>
+<script>videojs('v', { controls: false });</script>
+</body>
+</html>

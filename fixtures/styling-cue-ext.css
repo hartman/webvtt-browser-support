@@ -1,0 +1,7 @@
+body { margin: 0; background: #444; }
+video { display: block; width: 640px; height: 360px; }
+
+video::cue(.redbg) { background-color: red; color: white; }
+video::cue(v[voice="Bob"]) { background-color: blue; color: white; }
+video::cue(.highlight) { background-color: yellow; color: black; }
+video::cue(b) { background-color: green; color: white; }

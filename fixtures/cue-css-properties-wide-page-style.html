@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>WebVTT ::cue() wider CSS property list (font, line-height, opacity, outline, ruby-position, text-combine-upright, text-decoration, text-shadow, visibility, white-space)</title>
+<style>
+  body { margin: 0; background: #444; }
+  video { display: block; width: 640px; height: 360px; }
+  video::cue { color: white; }
+
+  video::cue(.font-test) { font: italic 900 32px "Courier New", monospace; color: yellow; }
+  video::cue(.lh-test) { line-height: 3; color: yellow; }
+  video::cue(.opacity-test) { opacity: 0.3; color: white; }
+  video::cue(.outline-test) { outline: 6px solid orange; color: white; }
+  video::cue(.decoration-test) { text-decoration: underline wavy red; color: white; }
+  video::cue(.shadow-test) { text-shadow: 6px 6px 0 red; color: white; }
+  video::cue(.visible-part) { color: yellow; }
+  video::cue(.hidden-part) { visibility: hidden; background-color: blue; }
+  video::cue(.whitespace-test) { white-space: pre; color: yellow; }
+  video::cue(ruby) { ruby-position: under; }
+  video::cue(rt) { color: magenta; }
+  video::cue(.tcu-test) { text-combine-upright: all; color: cyan; }
+</style>
+</head>
+<body>
+<video id="v" width="640" height="360" muted>
+  <source src="assets/blank.mp4" type="video/mp4">
+  <track kind="subtitles" src="cue-css-properties-wide-page-style.vtt" srclang="en" default>
+</video>
+</body>
+</html>

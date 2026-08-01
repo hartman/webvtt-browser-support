@@ -1,0 +1,28 @@
+WEBVTT
+
+STYLE
+::cue { font-size: 28px; }
+
+italic
+00:00:00.000 --> 00:00:02.000 line:84% position:50% align:center size:100%
+<i>Italic text</i>
+
+bold
+00:00:02.000 --> 00:00:04.000 line:84% position:50% align:center size:100%
+<b>Bold text</b>
+
+underline
+00:00:04.000 --> 00:00:06.000 line:84% position:50% align:center size:100%
+<u>Underlined text</u>
+
+nested
+00:00:06.000 --> 00:00:08.000 line:84% position:50% align:center size:100%
+<b><i>Bold italic nested</i></b>
+
+ruby
+00:00:08.000 --> 00:00:10.000 line:70% position:50% align:center size:100%
+<ruby>base<rt>annotation</rt></ruby>
+
+lang
+00:00:10.000 --> 00:00:12.000 line:84% position:50% align:center size:100%
+<lang ja>日本語テキスト</lang>

@@ -1,0 +1,18 @@
+WEBVTT
+
+STYLE
+::cue { color: white; }
+::cue(.bgcolor) { background-color: red; color: white; }
+::cue(#cue-id) { color: yellow; }
+
+bare
+00:00:00.000 --> 00:00:02.000 line:84% position:50% align:center size:100%
+Bare cue color test
+
+class
+00:00:02.000 --> 00:00:04.000 line:84% position:50% align:center size:100%
+<c.bgcolor>Class selector background</c>
+
+cue-id
+00:00:04.000 --> 00:00:06.000 line:84% position:50% align:center size:100%
+Id selector color test

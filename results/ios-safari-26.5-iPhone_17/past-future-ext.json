@@ -1,0 +1,42 @@
+{
+  "fixture": "past-future-ext",
+  "browser": "ios-safari-26.5-iPhone_17",
+  "cases": [
+    {
+      "label": "all-future",
+      "time": 0.5,
+      "screenshot": "past-future-ext-all-future.png",
+      "samples": []
+    },
+    {
+      "label": "one-past",
+      "time": 1.5,
+      "screenshot": "past-future-ext-one-past.png",
+      "samples": []
+    },
+    {
+      "label": "two-past",
+      "time": 2.5,
+      "screenshot": "past-future-ext-two-past.png",
+      "samples": []
+    },
+    {
+      "label": "three-past",
+      "time": 3.5,
+      "screenshot": "past-future-ext-three-past.png",
+      "samples": []
+    },
+    {
+      "label": "all-past",
+      "time": 4.5,
+      "screenshot": "past-future-ext-all-past.png",
+      "samples": []
+    },
+    {
+      "label": "ended",
+      "time": 5.5,
+      "screenshot": "past-future-ext-ended.png",
+      "samples": []
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+body { margin: 0; background: #444; }
+video { display: block; width: 640px; height: 360px; }
+video::cue(i) { color: orange; }
+video::cue(u) { color: cyan; }
+video::cue(ruby) { color: magenta; }
+video::cue(rt) { color: yellow; }
+video::cue(v) { color: lightgreen; }
+video::cue(b.hl) { color: red; }
+video::cue(v[voice="Bob"].hl) { color: blue; }
+video::cue(:lang(ja)) { color: pink; }
+video::cue(:lang("fr")) { color: aqua; }

@@ -1,0 +1,279 @@
+{
+  "fixture": "styling-cue-ext",
+  "browser": "ios-safari-26.5-iPhone_17",
+  "cases": [
+    {
+      "label": "no-cue",
+      "time": 11,
+      "screenshot": "styling-cue-ext-no-cue.png",
+      "samples": [
+        {
+          "label": "center",
+          "x": 320,
+          "y": 300,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        }
+      ]
+    },
+    {
+      "label": "plain",
+      "time": 1,
+      "screenshot": "styling-cue-ext-plain.png",
+      "samples": [
+        {
+          "label": "y280",
+          "x": 320,
+          "y": 280,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y295",
+          "x": 320,
+          "y": 295,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y310",
+          "x": 320,
+          "y": 310,
+          "pixel": {
+            "r": 245,
+            "g": 245,
+            "b": 245,
+            "a": 255
+          }
+        },
+        {
+          "label": "y325",
+          "x": 320,
+          "y": 325,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        }
+      ]
+    },
+    {
+      "label": "red",
+      "time": 3,
+      "screenshot": "styling-cue-ext-red.png",
+      "samples": [
+        {
+          "label": "y280",
+          "x": 320,
+          "y": 280,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y295",
+          "x": 320,
+          "y": 295,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y310",
+          "x": 320,
+          "y": 310,
+          "pixel": {
+            "r": 255,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y325",
+          "x": 320,
+          "y": 325,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        }
+      ]
+    },
+    {
+      "label": "voice-blue",
+      "time": 5,
+      "screenshot": "styling-cue-ext-voice-blue.png",
+      "samples": [
+        {
+          "label": "y280",
+          "x": 320,
+          "y": 280,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y295",
+          "x": 320,
+          "y": 295,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y310",
+          "x": 320,
+          "y": 310,
+          "pixel": {
+            "r": 34,
+            "g": 34,
+            "b": 255,
+            "a": 255
+          }
+        },
+        {
+          "label": "y325",
+          "x": 320,
+          "y": 325,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        }
+      ]
+    },
+    {
+      "label": "class-yellow",
+      "time": 7,
+      "screenshot": "styling-cue-ext-class-yellow.png",
+      "samples": [
+        {
+          "label": "y280",
+          "x": 320,
+          "y": 280,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y295",
+          "x": 320,
+          "y": 295,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y310",
+          "x": 320,
+          "y": 310,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y325",
+          "x": 320,
+          "y": 325,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        }
+      ]
+    },
+    {
+      "label": "bold-green",
+      "time": 9,
+      "screenshot": "styling-cue-ext-bold-green.png",
+      "samples": [
+        {
+          "label": "y280",
+          "x": 320,
+          "y": 280,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y295",
+          "x": 320,
+          "y": 295,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y310",
+          "x": 320,
+          "y": 310,
+          "pixel": {
+            "r": 64,
+            "g": 159,
+            "b": 64,
+            "a": 255
+          }
+        },
+        {
+          "label": "y325",
+          "x": 320,
+          "y": 325,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        }
+      ]
+    }
+  ]
+}

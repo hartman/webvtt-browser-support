@@ -1,0 +1,42 @@
+{
+  "fixture": "markup-tags",
+  "browser": "videojs-8.23.9",
+  "cases": [
+    {
+      "label": "italic",
+      "time": 1,
+      "screenshot": "markup-tags-italic.png",
+      "samples": []
+    },
+    {
+      "label": "bold",
+      "time": 3,
+      "screenshot": "markup-tags-bold.png",
+      "samples": []
+    },
+    {
+      "label": "underline",
+      "time": 5,
+      "screenshot": "markup-tags-underline.png",
+      "samples": []
+    },
+    {
+      "label": "nested",
+      "time": 7,
+      "screenshot": "markup-tags-nested.png",
+      "samples": []
+    },
+    {
+      "label": "ruby",
+      "time": 9,
+      "screenshot": "markup-tags-ruby.png",
+      "samples": []
+    },
+    {
+      "label": "lang",
+      "time": 11,
+      "screenshot": "markup-tags-lang.png",
+      "samples": []
+    }
+  ]
+}

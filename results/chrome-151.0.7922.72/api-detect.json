@@ -1,0 +1,30 @@
+{
+  "VTTCue": {
+    "present": true,
+    "props": {
+      "align": "string",
+      "id": "string",
+      "line": "string",
+      "lineAlign": "missing",
+      "position": "string",
+      "positionAlign": "missing",
+      "region": "missing",
+      "size": "number",
+      "snapToLines": "boolean",
+      "text": "string",
+      "vertical": "string"
+    }
+  },
+  "VTTRegion": {
+    "present": false
+  },
+  "textTrack": {
+    "activeCuesPresent": true,
+    "cueCount": 2,
+    "cuesPresent": true,
+    "kind": "subtitles",
+    "mode": "showing"
+  },
+  "textTracksLength": 1,
+  "trackElement": true
+}

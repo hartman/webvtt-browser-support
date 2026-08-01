@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>WebVTT ::cue styling</title>
+<style>
+  body { margin: 0; background: #444; }
+  video { display: block; width: 640px; height: 360px; }
+
+  video::cue(.redbg) { background-color: red; color: white; }
+  video::cue(v[voice="Bob"]) { background-color: blue; color: white; }
+  video::cue(.highlight) { background-color: yellow; color: black; }
+  video::cue(b) { background-color: green; color: white; }
+</style>
+</head>
+<body>
+<video id="v" width="640" height="360" muted>
+  <source src="assets/blank.mp4" type="video/mp4">
+  <track kind="subtitles" src="styling-cue-page-style.vtt" srclang="en" default>
+</video>
+</body>
+</html>

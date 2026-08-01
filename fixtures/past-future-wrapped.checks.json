@@ -1,0 +1,8 @@
+{
+  "cases": [
+    { "label": "plain-text-mid", "time": 3.5, "samples": [] },
+    { "label": "wrapped-c-mid", "time": 7.5, "samples": [] },
+    { "label": "wrapped-v-mid", "time": 12.5, "samples": [] },
+    { "label": "universal-star-mid", "time": 17.5, "samples": [] }
+  ]
+}

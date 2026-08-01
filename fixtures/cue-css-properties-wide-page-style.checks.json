@@ -1,0 +1,21 @@
+{
+  "cases": [
+    { "label": "font", "time": 1.0, "samples": [] },
+    { "label": "line-height", "time": 3.0, "samples": [] },
+    { "label": "opacity", "time": 5.0,
+      "samples": [
+        { "label": "y172", "x": 320, "y": 172 },
+        { "label": "y178", "x": 320, "y": 178 },
+        { "label": "y184", "x": 320, "y": 184 },
+        { "label": "y190", "x": 320, "y": 190 }
+      ] },
+    { "label": "outline", "time": 7.0, "samples": [] },
+    { "label": "text-decoration", "time": 9.0, "samples": [] },
+    { "label": "text-shadow", "time": 11.0, "samples": [] },
+    { "label": "visibility", "time": 13.0, "samples": [] },
+    { "label": "white-space", "time": 15.0, "samples": [] },
+    { "label": "ruby-position", "time": 17.0, "samples": [] },
+    { "label": "text-combine-upright", "time": 19.0, "samples": [] },
+    { "label": "text-combine-upright-control", "time": 21.0, "samples": [] }
+  ]
+}

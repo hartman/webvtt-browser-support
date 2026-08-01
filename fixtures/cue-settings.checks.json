@@ -1,0 +1,27 @@
+{
+  "cases": [
+    { "label": "line-pct", "time": 1.0,
+      "samples": [
+        { "label": "top-area", "x": 320, "y": 40 },
+        { "label": "bottom-area", "x": 320, "y": 320 }
+      ] },
+    { "label": "line-num", "time": 3.0,
+      "samples": [
+        { "label": "top-area", "x": 320, "y": 20 },
+        { "label": "second-line", "x": 320, "y": 50 }
+      ] },
+    { "label": "position-left", "time": 5.0,
+      "samples": [
+        { "label": "left-area", "x": 60, "y": 300 },
+        { "label": "right-area", "x": 580, "y": 300 }
+      ] },
+    { "label": "position-right", "time": 7.0,
+      "samples": [
+        { "label": "left-area", "x": 60, "y": 300 },
+        { "label": "right-area", "x": 580, "y": 300 }
+      ] },
+    { "label": "size-narrow", "time": 9.0, "samples": [] },
+    { "label": "vertical-rl", "time": 11.0, "samples": [] },
+    { "label": "align-start", "time": 13.0, "samples": [] }
+  ]
+}

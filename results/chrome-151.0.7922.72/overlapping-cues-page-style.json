@@ -1,0 +1,36 @@
+{
+  "fixture": "overlapping-cues-page-style",
+  "browser": "chrome-151.0.7922.72",
+  "cases": [
+    {
+      "label": "exact-overlap",
+      "time": 1,
+      "screenshot": "overlapping-cues-page-style-exact-overlap.png",
+      "samples": []
+    },
+    {
+      "label": "partial-before",
+      "time": 5,
+      "screenshot": "overlapping-cues-page-style-partial-before.png",
+      "samples": []
+    },
+    {
+      "label": "partial-during",
+      "time": 7,
+      "screenshot": "overlapping-cues-page-style-partial-during.png",
+      "samples": []
+    },
+    {
+      "label": "partial-after",
+      "time": 9,
+      "screenshot": "overlapping-cues-page-style-partial-after.png",
+      "samples": []
+    },
+    {
+      "label": "triple-overlap",
+      "time": 13,
+      "screenshot": "overlapping-cues-page-style-triple-overlap.png",
+      "samples": []
+    }
+  ]
+}

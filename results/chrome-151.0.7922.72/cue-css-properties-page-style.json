@@ -1,0 +1,108 @@
+{
+  "fixture": "cue-css-properties-page-style",
+  "browser": "chrome-151.0.7922.72",
+  "cases": [
+    {
+      "label": "bg-color",
+      "time": 1,
+      "screenshot": "cue-css-properties-page-style-bg-color.png",
+      "samples": [
+        {
+          "label": "y280",
+          "x": 320,
+          "y": 280,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y295",
+          "x": 320,
+          "y": 295,
+          "pixel": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          }
+        },
+        {
+          "label": "y310",
+          "x": 320,
+          "y": 310,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y325",
+          "x": 320,
+          "y": 325,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        }
+      ]
+    },
+    {
+      "label": "bg-image",
+      "time": 3,
+      "screenshot": "cue-css-properties-page-style-bg-image.png",
+      "samples": [
+        {
+          "label": "y280",
+          "x": 320,
+          "y": 280,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y295",
+          "x": 320,
+          "y": 295,
+          "pixel": {
+            "r": 189,
+            "g": 140,
+            "b": 193,
+            "a": 255
+          }
+        },
+        {
+          "label": "y310",
+          "x": 320,
+          "y": 310,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "label": "y325",
+          "x": 320,
+          "y": 325,
+          "pixel": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        }
+      ]
+    }
+  ]
+}

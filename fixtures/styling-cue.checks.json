@@ -1,0 +1,41 @@
+{
+  "cases": [
+    { "label": "no-cue", "time": 11.0,
+      "samples": [ { "label": "center", "x": 320, "y": 300 } ] },
+    { "label": "plain", "time": 1.0,
+      "samples": [
+        { "label": "y280", "x": 320, "y": 280 },
+        { "label": "y295", "x": 320, "y": 295 },
+        { "label": "y310", "x": 320, "y": 310 },
+        { "label": "y325", "x": 320, "y": 325 }
+      ] },
+    { "label": "red", "time": 3.0,
+      "samples": [
+        { "label": "y280", "x": 320, "y": 280 },
+        { "label": "y295", "x": 320, "y": 295 },
+        { "label": "y310", "x": 320, "y": 310 },
+        { "label": "y325", "x": 320, "y": 325 }
+      ] },
+    { "label": "voice-blue", "time": 5.0,
+      "samples": [
+        { "label": "y280", "x": 320, "y": 280 },
+        { "label": "y295", "x": 320, "y": 295 },
+        { "label": "y310", "x": 320, "y": 310 },
+        { "label": "y325", "x": 320, "y": 325 }
+      ] },
+    { "label": "class-yellow", "time": 7.0,
+      "samples": [
+        { "label": "y280", "x": 320, "y": 280 },
+        { "label": "y295", "x": 320, "y": 295 },
+        { "label": "y310", "x": 320, "y": 310 },
+        { "label": "y325", "x": 320, "y": 325 }
+      ] },
+    { "label": "bold-green", "time": 9.0,
+      "samples": [
+        { "label": "y280", "x": 320, "y": 280 },
+        { "label": "y295", "x": 320, "y": 295 },
+        { "label": "y310", "x": 320, "y": 310 },
+        { "label": "y325", "x": 320, "y": 325 }
+      ] }
+  ]
+}

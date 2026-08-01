@@ -1,0 +1,54 @@
+{
+  "fixture": "selector-types",
+  "browser": "Safari_Technology_Preview-27.0",
+  "cases": [
+    {
+      "label": "tag-i",
+      "time": 1,
+      "screenshot": "selector-types-tag-i.png",
+      "samples": []
+    },
+    {
+      "label": "tag-u",
+      "time": 3,
+      "screenshot": "selector-types-tag-u.png",
+      "samples": []
+    },
+    {
+      "label": "tag-ruby",
+      "time": 5,
+      "screenshot": "selector-types-tag-ruby.png",
+      "samples": []
+    },
+    {
+      "label": "tag-v-nofilter",
+      "time": 7,
+      "screenshot": "selector-types-tag-v-nofilter.png",
+      "samples": []
+    },
+    {
+      "label": "compound-tag-class",
+      "time": 9,
+      "screenshot": "selector-types-compound-tag-class.png",
+      "samples": []
+    },
+    {
+      "label": "compound-voice-class",
+      "time": 11,
+      "screenshot": "selector-types-compound-voice-class.png",
+      "samples": []
+    },
+    {
+      "label": "pseudo-lang",
+      "time": 13,
+      "screenshot": "selector-types-pseudo-lang.png",
+      "samples": []
+    },
+    {
+      "label": "pseudo-lang-quoted",
+      "time": 15,
+      "screenshot": "selector-types-pseudo-lang-quoted.png",
+      "samples": []
+    }
+  ]
+}

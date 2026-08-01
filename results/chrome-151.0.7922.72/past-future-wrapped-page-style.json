@@ -1,0 +1,30 @@
+{
+  "fixture": "past-future-wrapped-page-style",
+  "browser": "chrome-151.0.7922.72",
+  "cases": [
+    {
+      "label": "plain-text-mid",
+      "time": 3.5,
+      "screenshot": "past-future-wrapped-page-style-plain-text-mid.png",
+      "samples": []
+    },
+    {
+      "label": "wrapped-c-mid",
+      "time": 7.5,
+      "screenshot": "past-future-wrapped-page-style-wrapped-c-mid.png",
+      "samples": []
+    },
+    {
+      "label": "wrapped-v-mid",
+      "time": 12.5,
+      "screenshot": "past-future-wrapped-page-style-wrapped-v-mid.png",
+      "samples": []
+    },
+    {
+      "label": "universal-star-mid",
+      "time": 17.5,
+      "screenshot": "past-future-wrapped-page-style-universal-star-mid.png",
+      "samples": []
+    }
+  ]
+}
