@@ -12,7 +12,7 @@ title: Home
 
 - **Safari and Safari Technology Preview** implement the spec most completely and consistently.
 - **Chrome** deviates in specific, deliberate ways: no regions at all.
-- **Firefox** deviates the most broadly: it doesn't really allow styling per cue at all.
+- **Firefox** deviates significantly: it doesn't really allow styling per cue at all.
 - **iOS Safari** tracks desktop Safari's spec compliance exactly, no divergence found.
 - video.js's own renderer isn't spec-compliant either, and turning it off costs little, so you probably should.
 
