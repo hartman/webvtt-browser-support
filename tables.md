@@ -78,7 +78,7 @@ The iOS Safari column reflects Simulator testing (see the [intro page](index.md)
 
 ¶ Chrome supports this property generally outside WebVTT, since Chrome 84. It's specifically inert inside `::cue()`'s permitted-property set.
 
-† Fails via the default `STYLE`-block method. Works fine via the secondary page-level-`<style>`/external-stylesheet methods, tiling the checkerboard correctly, the only property where those methods diverge from the default.
+† Fails via the default `STYLE`-block method in Firefox, Safari, and Safari TP — **Chrome is the only browser where `STYLE`-block `background-image` works at all.** Works fine everywhere via the secondary page-level-`<style>`/external-stylesheet methods, tiling the checkerboard correctly — the only property where those methods diverge from the default. The animated-formats tables below confirm and extend this same fact across GIF/APNG/WebP/SVG and a bare (class-free) selector.
 
 Every selector type and property above was also checked via those two secondary methods, and matched the default `STYLE`-block result exactly, except the one `background-image` row.
 
@@ -96,21 +96,21 @@ Network-referenced image (a URL, not a data URI), via page-level `<style>` — t
 | SVG animated via SMIL (`<animate>`) | ❌ frozen | ❌ frozen ‖ | ❌ frozen | ❌ frozen |
 | SVG animated via CSS `@keyframes` | ❌ frozen | ❌ frozen ‖ | ❌ frozen | ❌ frozen |
 
-Base64 data URI, in the `.vtt` file's own `STYLE` block (i.e. the one way any of this could reach a real, self-contained subtitle file's default styling method):
+Base64 data URI, in the `.vtt` file's own `STYLE` block (i.e. the one way any of this could reach a real, self-contained subtitle file's default styling method) — this is the same Chrome-only `STYLE`-block restriction as the `background-image` row above (†), now confirmed across every format here and with a bare, class-free selector:
 
 | Format | Chrome 151 | Firefox 153 | Safari 26.6 | Safari TP 27.0 |
 |---|---|---|---|---|
-| Animated GIF | ✅ animates | ❌ ♦ | ❌ ♦ | ❌ ♦ |
-| Animated PNG (APNG) | ✅ animates | ❌ ♦ | ❌ ♦ | ❌ ♦ |
-| Animated WebP | ✅ animates | ❌ ♦ | ❌ ♦ | ❌ ♦ |
-| SVG animated via SMIL (`<animate>`) | ✅ animates | ❌ ♦ | ❌ ♦ | ❌ ♦ |
-| SVG animated via CSS `@keyframes` | ✅ animates | ❌ ♦ | ❌ ♦ | ❌ ♦ |
+| Animated GIF | ✅ animates | ❌ † | ❌ † | ❌ † |
+| Animated PNG (APNG) | ✅ animates | ❌ † | ❌ † | ❌ † |
+| Animated WebP | ✅ animates | ❌ † | ❌ † | ❌ † |
+| SVG animated via SMIL (`<animate>`) | ✅ animates | ❌ † | ❌ † | ❌ † |
+| SVG animated via CSS `@keyframes` | ✅ animates | ❌ † | ❌ † | ❌ † |
 
-The SVG rows are the interesting reversal: a **network-loaded** SVG's own animation never plays anywhere (treated as a fully static image, like `<img src="*.svg">`), but the identical SVG **base64-encoded** animates normally — in all four browsers, once it's actually reachable. Encoding, not format, is what determines whether an SVG's own animation runs.
+The SVG rows are the interesting reversal: a **network-loaded** SVG's own animation never plays anywhere (treated as a fully static image, like `<img src="*.svg">`), but the identical SVG **base64-encoded** animates normally — in all four browsers, once it's actually reachable (page-level `<style>`, since `STYLE` block only reaches Chrome). Encoding, not format, is what determines whether an SVG's own animation runs.
 
 ‖ Firefox can't reach any of these through `::cue(.class)` at all (same argument-selector failure as the selector-types table above) — verified separately with a bare, class-free `::cue{}` rule instead, where the underlying animation behavior turns out identical to the other three browsers.
 
-♦ No `background-image` shows at all inside a `STYLE` block in these three browsers, base64 or not, any format — confirmed by screenshot. Chrome is the only browser where the default/primary styling method can show an animated background at all; everyone else needs page-level or external CSS. Not independently re-tested on iOS Safari for either table on this page.
+Not independently re-tested on iOS Safari for either table on this page.
 
 ## VTT cue settings
 
