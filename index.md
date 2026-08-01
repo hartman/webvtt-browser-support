@@ -8,6 +8,16 @@ title: Home
 
 *Tested in July/August 2026 against Chrome 151, Firefox 153, Safari 26.6, Safari Technology Preview 27.0, iOS Safari 26.5 (Simulator), and video.js 8.23.9.*
 
+## TL;DR
+
+- **Safari and Safari Technology Preview** implement the spec most completely and consistently.
+- **Chrome** deviates in specific, deliberate ways: no regions at all.
+- **Firefox** deviates the most broadly: it doesn't really allow styling per cue at all.
+- **iOS Safari** tracks desktop Safari's spec compliance exactly, no divergence found.
+- video.js's own renderer isn't spec-compliant either, and turning it off costs little, so you probably should.
+
+Skip straight to the [full findings](#the-big-picture-browser-by-browser) below, or the [tables page](tables.md) for the complete matrix.
+
 ## Background
 I've long been interested in WebVTT. Or maybe I should say the _promise_ of WebVTT, because so far usage is lower than expected and browser behavior is rather unpredictable.
 Ever since 2012 when Wikipedia got its first HTML5 player ([mwEmbed](https://www.mediawiki.org/wiki/Extension:MwEmbedSupport/MwEmbed), based on [Kaltura's player](https://kaltura.com)), I've been playing around with HTML5 subtitles for Wikipedia.
